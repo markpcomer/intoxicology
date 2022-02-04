@@ -1,6 +1,6 @@
 let cocktailsArray = [
 {	name: "Aperol Spritz",
-	image: "Images/aperolspritz.jpg",
+	image: "Images/waldorf.jpg",
 	liqueur: "Aperol",
 	syrup: " ",
 	juice: " ",
@@ -9,7 +9,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Aviation",
-	image: "Images/aviation.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Gin",
 	liqueur: ["Marashino", "Creme de Violette"],
 	syrup: " ",
@@ -19,7 +19,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Boulevardier",
-	image: "Images/boulevardier.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Whiskey",
 	liqueur: ["Campari", "Sweet Vermouth"],
 	syrup: " ",
@@ -29,7 +29,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "The Brooklyn",
-	image: "Images/brooklyn.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Whiskey",
 	liqueur: ["Dry Vermouth", "Marashino", "Amer Picon"],
 	syrup: " ",
@@ -39,7 +39,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Cosmopolitan",
-	image: "Images/cosmo.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Vodka",
 	liqueur: "Triple Sec",
 	syrup: " ",
@@ -48,8 +48,18 @@ let cocktailsArray = [
 	bitters: " ",
 	'egg white': " "
 },
+{	name: "Cuba Libre",
+	image: "Images/waldorf.jpg",
+	spirit: "Rum",
+	liqueur: " ",
+	syrup: " ",
+	juice: " ",
+	soda: "Cola",
+	bitters: " ",
+	'egg white': " "
+},
 {	name: "Daiquiri",
-	image: "Images/daiquiri.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Rum",
 	liqueur: " ",
 	syrup: "Agave",
@@ -59,7 +69,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Espresso Martini",
-	image: "Images/espressomartini.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Vodka",
 	liqueur: "Coffee Liqueur",
 	syrup: " ",
@@ -69,7 +79,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "French 75",
-	image: "Images/french75.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Gin",
 	liqueur: " ",
 	syrup: "Simple Syrup",
@@ -79,7 +89,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Gimlet",
-	image: "Images/gimlet.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Gin",
 	liqueur: " ",
 	syrup: "Simple Syrup",
@@ -89,7 +99,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "The Great Pumpkin",
-	image: "Images/greatpumpkin.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Whiskey",
 	liqueur: ["Apple Brandy"],
 	syrup: "Maple Syrup",
@@ -99,7 +109,7 @@ let cocktailsArray = [
 	'egg white': "Yes"
 },
 {	name: "The Longshoreman",
-	image: "Images/longshoreman.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Whiskey",
 	liqueur: ["Averna Amaro", "Punt e Mes"],
 	syrup: " ",
@@ -109,7 +119,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Manhattan",
-	image: "Images/manhattan.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Whiskey",
 	liqueur: "Sweet Vermouth",
 	syrup: " ",
@@ -119,7 +129,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Margarita",
-	image: "Images/margarita.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Tequila",
 	liqueur: "Triple Sec",
 	syrup: "Simple Syrup",
@@ -129,7 +139,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Martini",
-	image: "Images/martini.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Vodka",
 	liqueur: "Dry Vermouth",
 	syrup: " ",
@@ -140,7 +150,7 @@ let cocktailsArray = [
 },
 {
 	name: "Mojito",
-	image: "Images/mojito.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Rum",
 	liqueur: " ",
 	syrup: "Simple Syrup",
@@ -150,7 +160,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Moscow Mule",
-	image: "Images/moscowmule.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Vodka",
 	liqueur: " ",
 	syrup: "Simple Syrup",
@@ -160,7 +170,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Negroni",
-	image: "Images/negroni.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Gin",
 	liqueur: ["Sweet Vermouth", "Campari"],
 	syrup: " ",
@@ -170,7 +180,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Old Fashioned",
-	image: "Images/oldfashioned.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Whiskey",
 	liqueur: " ",
 	syrup: "Demarura Syrup",
@@ -180,7 +190,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Paloma",
-	image: "Images/paloma.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Tequila",
 	liqueur: " ",
 	syrup: " ",
@@ -189,8 +199,18 @@ let cocktailsArray = [
 	bitters: " ",
 	'egg white': " "
 },
+{	name: "Ring the Alarm",
+	image: "Images/waldorf.jpg",
+	spirit: "Tequila",
+	liqueur: "Aperol",
+	syrup: "Agave",
+	juice: ["Lime Juice", "Pineapple Juice"],
+	soda: " ",
+	bitters: "Peychaud",
+	'egg white': " "
+},
 {	name: "Sazerac",
-	image: "Images/sazerac.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Cognac",
 	liqueur: "Absinthe",
 	syrup: " ",
@@ -200,7 +220,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Sidecar",
-	image: "Images/sidecar.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Brandy",
 	liqueur: "Triple Sec",
 	syrup: " ",
@@ -210,7 +230,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Tom Collins",
-	image: "Images/tomcollins.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Gin",
 	liqueur: " ",
 	syrup: "Simple Syrup",
@@ -230,7 +250,7 @@ let cocktailsArray = [
 	'egg white': " "
 },
 {	name: "Whiskey Sour",
-	image: "Images/whiskeysour.jpg",
+	image: "Images/waldorf.jpg",
 	spirit: "Whiskey",
 	liqueur: " ",
 	syrup: "Simple",
@@ -240,6 +260,9 @@ let cocktailsArray = [
 	'egg white': "Yes"
 },
 ];
+
+
+
 
 function cocktailCardsFunc (drink) {
 	return `<div class="test-card">
@@ -262,16 +285,24 @@ function cocktailCardsFunc (drink) {
 }
 
 
-
 function renderCards(arr) {
 	let cocktailCards =  arr.map(drink => cocktailCardsFunc(drink));
 	document.getElementsByClassName('test-container')[0].innerHTML = cocktailCards;
-	console.log('test-containter');
+	console.log('test-card');
 } 
+/* 
+parameters => expression
+
+// is equivalent to:
+
+function (parameters){
+  return expression;
+}
+*/
 
 /*
-function renderCards(arr) {
-	let cocktailCards = arr.map(functcocktailCardsFuncion(drink) {
+function renderCards(array) {
+	let cocktailCards = array.map()
 
 	}
 	
