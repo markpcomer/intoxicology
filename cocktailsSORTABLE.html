@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="cocktailsSORTABLE.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500;700&display=swap" rel="stylesheet">
+	<title>Cocktail Recipes</title>
+</head>
+
+<body>
+	
+<header>
+<h1><a href="index.html">Intoxicology</a></h1>
+<nav>
+	<ul class="top-dropdown">
+		<div class="dropdown">
+			<button id="nav-leftborder" class="dropbtn">The Basics</button>
+				<div class="dropdown-content">
+					<a href="bartools.html">Bar Tools</a>
+					<a href="#">Get The Job</a>
+					<a href="#">Current Trends</a>
+					<a href="#">Bar Etiquitte & Bar Culture</a>
+				</div>
+		</div>
+
+		<div class="dropdown">
+  			<button class="dropbtn">Spirits</button>
+  				<div class="dropdown-content">
+  					<a href="">Vodka</a>
+  					<a href="#">Gin</a>
+  					<a href="#">Whiskey</a>
+  					<a href="#">Tequila</a>
+  					<a href="#">Rum</a>
+  				</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Cocktail Recipes</button>
+				<div class="dropdown-content">
+					<a href="cocktails.html">Vodka</a>
+					<a href="cocktails.html">Gin</a>
+					<a href="cocktails.html">Whiskey</a>
+					<a href="cocktails.html">Tequila</a>
+					<a href="cocktails.html">Rum</a>
+				</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Beer & Wine</button>
+				<div class="dropdown-content">
+					<a href="#">Wine History</a>
+					<a href="#">Reds</a>
+					<a href="#">Whites</a>
+					<a href="#">Beer/Ale</a>
+					<a href="#">Homebrewing</a>
+				</div>
+		</div>
+
+		<div class="dropdown">
+  			<button id="nav-rightborder" class="dropbtn">About Us</button>
+  				<div class="dropdown-content">
+    				<a href="#">Who We Are</a>
+    				<a href="#">What We Like to Drink</a>
+    				<a href="#">Where We Like to Drink</a>
+    				<a href="#">Why We Do What We Do</a>
+    			</div> </div>
+	</ul>
+</nav>
+
+<h2>Cocktail Recipes</h2>
+<h3>Elevate Your Mixology Skills</h3>
+</header>
+
+	
+
+	<script>
+		function myWorld(e) {
+			console.log(e.target.id);
+			console.log(e.target.type);
+			let filterType = e.target.type
+			let newCocktails = cocktailsArray.filter(c => c[filterType] === e.target.id)
+			/*
+			let newCocktails = []
+			for (let i = 0; i < cocktailsArray.length; i++){
+				if (cocktailsArray[i].spirit == e.target.id){
+					newCocktails.push(cocktailsArray[i])
+				}
+			}
+			*/
+			//  function newCocktails
+			console.log(newCocktails)
+			renderCards(newCocktails)
+				};
+	</script>
+	
+	<div class="dropdown">
+  		<button onclick="myWorld()" class="dropbtn">Spirits</button>
+  			<div id="myDropdown" class="dropdown-content">
+    			<a onclick="myWorld(event)" type="spirit" id="Vodka"  href="#">Vodka</a>
+    			<a onclick="myWorld(event)" type="spirit" id="Gin" href="#">Gin</a>
+    			<a onclick="myWorld(event)" type="spirit" id="Tequila" href="#">Tequila</a>
+    			<a onclick="myWorld(event)" type="spirit" id="Whiskey" href="#">Whiskey</a>
+				<a onclick="myWorld(event)" type="spirit" id="Rum" href="#">Rum</a>
+				<a onclick="myWorld(event)" type="spirit" id="Brandy & Cognac" href="#">Brandy & Cognac</a>
+
+  			</div>
+	</div>
+	<div class="dropdown">
+
+  		<button onclick="myWorld()" class="dropbtn">Liqueurs</button>
+  			<div id="myDropdown" class="dropdown-content">
+    			<a onclick="myWorld(event)" type="liqueur" id="Absinthe" href="#">Absinthe</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Ameretto" href="#">Ameretto</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Amaro" href="#">Amaro</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Amer Picon" href="#">Amer Picon</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Apple Brandy" href="#">Apple Brandy</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Aperol" href="#">Aperol</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Averna Amaro" href="#">Averna Amaro</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Benedictine" href="#">Benedictine</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Blue Curacao" href="#">Blue Curacao</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Campari" href="#">Campari</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Chartreuse" href="#">Chartreuse</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Cherry Liqueur" href="#">Cherry Liqueur</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Coffee Liqueur" href="#">Coffee Liqueur</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Creme de Cassis" href="#">Creme de Cassis</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Creme de Menthe" href="#">Creme de Menthe</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Creme de Violet" href="#">Creme de Violet</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Cynar" href="#">Cynar</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Drambuie" href="#">Drambuie</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Dry Vermouth" href="#">Dry Vermouth</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Falernum" href="#">Falernum</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Frangelico" href="#">Frangelico</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Irish Cream" href="#">Irish Cream</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Ginger Liqueur" href="#">Ginger Liqueur</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Grand Marnier" href="#">Grand Marnier</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Limoncello" href="#">Limoncello</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Mamajuana" href="#">Mamajuana</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Maraschino" href="#">Maraschino</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Midori" href="#">Midori</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Pimm" href="#">Pimm's</a>
+				<a onclick="myWorld(event)" type="liqueur" id="Punt e Mes" href="#">Punt e Mes</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Sambuca" href="#">Sambuca</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Sloe Gin" href="#">Sloe Gin</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="St. Germain" href="#">St. Germain</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Sweet Vermouth" href="#">Sweet Vermouth</a>
+    			<a onclick="myWorld(event)" type="liqueur" id="Triple Sec" href="#">Triple Sec</a>
+
+  			</div>
+	</div>
+	<div class="dropdown">
+  		<button onclick="myWorld()" class="dropbtn">Syrups</button>
+  			<div id="myDropdown" class="dropdown-content">
+    			<a onclick="myWorld(event)" type="syrup" id="Agave Syrup" href="#">Agave Syrup</a>
+    			<a onclick="myWorld(event)" type="syrup" id="Cinnamon Syrup" href="#">Cinnamon Syrup</a>
+    			<a onclick="myWorld(event)" type="syrup" id="Demarura Syrup" href="#">Demarura Syrup</a>
+    			<a onclick="myWorld(event)" type="syrup" id="Ginger Syrup" href="#">Ginger Syrup</a>
+    			<a onclick="myWorld(event)" type="syrup" id="Grenadine" href="#">Grenadine</a>
+    			<a onclick="myWorld(event)" type="syrup" id="Honey Syrup" href="#">Honey Syrup</a>
+    			<a onclick="myWorld(event)" type="syrup" id="Maple Syrup" href="#">Maple Syrup</a>
+    			<a onclick="myWorld(event)" type="syrup" id="Simple Syrup" href="#">Simple Syrup</a>
+  			</div>
+	</div>
+	<div class="dropdown">
+  		<button onclick="myWorld()" class="dropbtn">Citrus / Juices</button>
+  			<div id="myDropdown" class="dropdown-content">
+    			<a onclick="myWorld(event)" type="juice" id="Apple Juice" href="#">Apple Juice or Cider</a>
+				<a onclick="myWorld(event)" type="juice" id="Cranberry Juice" href="#">Cranberry Juice</a>
+				<a onclick="myWorld(event)" type="juice" id="Cucumber Juice" href="#">Cucumber Juice</a>
+    			<a onclick="myWorld(event)" type="juice" id="Ginger Juice" href="#">Ginger Juice</a>
+    			<a onclick="myWorld(event)" type="juice" id="Grapefruit Juice" href="#">Grapefruit Juice</a>
+    			<a onclick="myWorld(event)" type="juice" id="Lemon Juice" href="#">Lemon Juice</a>
+    			<a onclick="myWorld(event)" type="juice" id="Lime Juice" href="#">Lime Juice</a>
+    			<a onclick="myWorld(event)" type="juice" id="Orange Juice" href="#">Orange Juice</a>
+    			<a onclick="myWorld(event)" type="juice" id="Pineapple Juice" href="#">Pineapple Juice</a>
+  			</div>
+	</div>
+	<div class="dropdown">
+  		<button onclick="myWorld()" class="dropbtn">Sodas, Grape-Based Ingredients, Coffee, Espresso, & Mixers</button>
+  			<div id="myDropdown" class="dropdown-content">
+				<a onclick="myWorld(event)" type="soda" id="Bloody Mix" href="#">Bloody Mix</a>  
+				<a onclick="myWorld(event)" type="soda" id="Club Soda" href="#">Club Soda</a>
+				<a onclick="myWorld(event)" type="soda" id="Cranberry Juice" href="#">Cranberry Juice</a>
+				<a onclick="myWorld(event)" type="soda" id="Cola" href="#">Cola</a>
+				<a onclick="myWorld(event)" type="soda" id="Coffee" href="#">Coffee</a>
+				<a onclick="myWorld(event)" type="soda" id="Diet Cola" href="#">Diet Cola</a>
+				<a onclick="myWorld(event)" type="soda" id="Espresso" href="#">Espresso</a>
+    			<a onclick="myWorld(event)" type="soda" id="Ginger Ale" href="#">Ginger Ale</a>
+				<a onclick="myWorld(event)" type="soda" id="Ginger Beer" href="#">Ginger Beer</a>
+				<a onclick="myWorld(event)" type="soda" id="Grapefruit Soda" href="#">Grapefruit Soda</a>
+				<a onclick="myWorld(event)" type="soda" id="Prosecco" href="#">Prosecco</a>
+    			<a onclick="myWorld(event)" type="soda" id="Root Beer" href="#">Root Beer</a>
+    			<a onclick="myWorld(event)" type="soda" id="Seven Up" href="#">Seven Up or Citrus Soda</a>
+    			<a onclick="myWorld(event)" type="soda" id="Tonic" href="#">Tonic</a>
+  			</div>
+	</div>
+	<div class="dropdown">
+  		<button onclick="myWorld()" class="dropbtn">Bitters</button>
+  			<div id="myDropdown" class="dropdown-content">
+    			<a onclick="myWorld(event)" type="bitters" id="Angostura Bitters" href="#">Angostura Bitters</a>
+    			<a onclick="myWorld(event)" type="bitters" id="Orange Bitters" href="#">Orange</a>
+    			<a onclick="myWorld(event)" type="bitters" id="Peychaud Bitters" href="#">Peychaud's</a>
+  			</div>
+	</div>
+	<div class="dropdown">
+  		<button onclick="myWorld()" class="dropbtn">Egg White?</button>
+  			<div id="myDropdown" class="dropdown-content">
+    			<a onclick="myWorld(event)" type="egg white" href="#">No</a>
+    			<a onclick="myWorld(event)" type="egg white" href="#">Yes</a>
+  			</div>
+	</div>
+
+
+<main class="test-container">
+	<script src="cocktailsSORTABLE.js"></script>
+		<!--
+
+
+
+
+
+
+
+
+
+		<div class="test-card">
+
+			<div class="test-card-front">
+			</div>	
+
+			<div>
+				<img class="test-image" src="Images/martini.jpg">
+			</div>
+
+			<div class="test-card-reveal fadeIn-bottom">
+				<h3 class="test-cocktail-name">Martini</h3>
+				<ul class="test-cocktail-recipe">
+					<li>Gin ~ 3.5oz</li>
+					<li>Dry Vermouth ~ 0.5oz</li>
+					<li>Skewered Olives or Lemon Twist</li>
+					<li>Add Gin & Vermouth to mixing glass. Stir with elegant vigor. Strain into chilled coup and add garnish.</li>
+				</ul>
+			</div>
+		</div>
+
+	
+		
+		<div class="test-card">
+			<div class="test-card-front">
+			</div>
+			<div>
+				<img class="test-image" src="Images/manhattan.jpg">
+			</div>
+			<div class="test-card-reveal fadeIn-bottom">
+				<h3 class="test-cocktail-name">Martini</h3>
+				<ul class="test-cocktail-recipe">
+					<li>Gin ~ 3.5oz</li>
+					<li>Dry Vermouth ~ 0.5oz</li>
+					<li>Skewered Olives or Lemon Twist</li>
+					<li>Add Gin & Vermouth to mixing glass. Stir with elegant vigor. Strain into chilled coup and add garnish.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-card">
+			<div class="test-card-front">
+			</div>
+
+			<div>
+				<img class="test-image" src="Images/negroni.jpg">
+			</div>
+
+			<div class="test-card-reveal fadeIn-bottom">
+				<h3 class="test-cocktail-name">Martini</h3>
+				<ul class="test-cocktail-recipe">
+					<li>Gin ~ 3.5oz</li>
+					<li>Dry Vermouth ~ 0.5oz</li>
+					<li>Skewered Olives or Lemon Twist</li>
+					<li>Add Gin & Vermouth to mixing glass. Stir with elegant vigor. Strain into chilled coup and add garnish.</li>
+				</ul>
+			</div>
+		</div>
+		
+
+	</div>
+-->
+		
+
+		
+
+
+
+ 
+
+
+
+
+
+</main>
+</body>
+
+</html>
+
+
+
+
+

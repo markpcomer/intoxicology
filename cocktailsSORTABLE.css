@@ -1,0 +1,445 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+*, *:before, *:after { box-sizing: inherit; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/bottlesilhouettes.jpg');
+  background-attachment: fixed;
+  background-color: #231f20;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  z-index: 1;
+}
+
+h1 {
+	font-family: 'North Carossela';
+	font-size: 9em;
+	color: white;
+	text-shadow: 4px 7px 4px #000000;
+	margin: 0;
+	padding-top: 60px;
+  text-align: center; 
+}
+
+h2 {
+  font-family: 'North Carossela';
+  font-size: 4.5em;
+  color: white;
+  text-shadow: 2px 4px 1px #000000;
+  text-align: center;
+  margin: 5% auto;
+  padding: 2% 2%;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.64);
+  border-radius: 15px;
+}
+
+/* h3 {
+  font-family: 'North Carossela';
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 1px 1px #000000;
+  margin: 5% auto;
+  padding: 2% 2%;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.64);
+  border-radius: 15px;
+}  
+*/
+
+h4 {
+  font-family: 'North Carossela';
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 1px 1px #000000;
+  text-align: center;
+  padding: 5% 0;
+}
+
+/* p {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 600;
+  padding: 2% 10%;
+  text-align: justify;
+  line-height: 1.8;
+}
+*/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	border-radius: 15px;
+}
+
+
+nav {
+	text-align: center;
+  opacity: 80%;
+}
+
+div.a {
+  text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+#nav-leftborder {
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;   
+    }
+
+#nav-rightborder {
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;  
+    }
+
+.top-dropdown {
+  background-color: black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  font-family: 'North Carossela', sans-serif;
+  z-index: 1;
+  border-radius: 15px;
+  transition: opacity 250ms ease-in-out;
+
+}
+
+.dropbtn:hover {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  transition: 1s;
+  font-family: 'North Carossela', sans-serif;
+  background-color: #80ccff;
+  z-index: 1;
+  text-align: center;
+  transition: opacity 250ms ease-in-out;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  font-family: 'North Carossela';
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;  
+  transition: 3.5s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  font-size: 25px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: -1;
+  border-radius: 15px;
+  transition: .75s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #00ace6;
+	z-index: -1;
+	transition: opacity 250ms ease-in-out;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+	border-radius: 15px;
+	transition: all 2s;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #00ace6;
+	transition: .5s;
+  text-align: center;
+}
+
+/* CURRENT RECIPE CARDS */
+
+.test-container{
+  padding: 1em 1em;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2%;  
+  grid-row-gap: 2%;
+
+}
+
+.test-card{
+  position: relative;
+  max-width: 100%; 
+  max-height: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15%;
+  
+}
+
+
+.test-card .test-card-front{
+  background: rgb(0,0,0,0.9);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 100%; 
+  max-height: 100%;
+
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.test-card:hover .test-card-front{
+  opacity: 1;
+}
+
+.test-image{
+  display: block;
+  width: 100%;
+  height: auto;
+  
+  max-width: 100%; 
+  max-height: 100%;
+  margin: auto;
+  border-radius: 15%;
+
+}
+
+.test-card-reveal{
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 100%; 
+  max-height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.test-card:hover .test-card-reveal{
+  top: 50%;
+  left: 50%;
+  max-width: 100%; 
+  max-height: 100%;
+  opacity: 1;
+}
+
+.test-card-reveal h3{
+  color: #fff;
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: .15em;
+  margin-bottom: .3em;
+  font-family: 'Atlantic Cruise', serif;
+  text-transform: uppercase;
+}
+
+.test-card-reveal h3::first-letter {
+  font-size: 150%;
+}
+
+.test-cocktail-recipe ul{
+  background: rgb(0,0,0,0.7);
+}
+
+.test-card-reveal li{
+  list-style-type: none;
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: .03em;
+  font-family: 'North Carossela';
+  line-height: 1.5em;
+  text-align: left;
+  padding: 0.25em 1em 0 1em;
+
+}
+
+.test-card-reveal p{
+  text-indent: 5%;
+  font-size: .65em;
+}
+
+.test-card-reveal li::first-letter {
+  font-size: 125%;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+
+
+/* OLD FLIPCARDS 
+
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-radius: 15%; 
+}
+
+
+
+
+.container {
+  width: 50%;
+  height: auto;
+  margin: 10%;
+   
+}
+
+.category a {
+  margin: 10%;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  transition: all 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  
+}
+.category a:hover,
+.category a:focus {
+  transform: scale(1.25);
+  transform-origin: center bottom;
+  
+}
+
+.category .description {
+  border-radius: 15%; 
+  
+  font-family: 'North Carossela';
+  text-align: center;
+  
+  
+  color: #fff;
+  background: rgba(0,0,0, .7);
+  position: absolute;
+  top: calc(100% - 4rem);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.description {
+  position: absolute;
+}
+
+.description h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3% 0 0 3%;
+}
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: black;
+  border-radius: 15px;
+}
+
+
+.description ul {
+  list-style: none;
+  display: inline-block;
+  background-color: rgba(0,0,0,0); 
+
+}
+
+.description li {
+  list-style-type: none;
+  font-size: 2rem;
+  text-align: left;
+  padding: 5% 0;
+  line-height: 1rem;
+  font-family: 'Atlantic Cruise', serif; 
+  text-transform: none;
+
+}
+
+.description p {
+  list-style-type: none;
+  font-family: 'Atlantic Cruise', serif;
+  font-size: 1.5rem;
+  text-align: left; 
+  padding: 5% 0;
+  line-height: 1.9rem;
+  margin: 0;
+}
+
+
+
+
+.category a:hover .description,
+.category a:focus .description {
+  top: 0;
+  z-index: 2;
+  /* padding-top: calc(33.33% - 4rem/2); 
+}
+*/
